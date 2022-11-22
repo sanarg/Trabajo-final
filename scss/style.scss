@@ -1,0 +1,105 @@
+$bgcolor: #ffff8f;
+$tamanoLetra: 1.2rem;
+
+$tamanoLetraChica: 1.1rem;
+$tamanaLetraGrande: 1.5rem;
+
+.bg-warning {
+  background-color: $bgcolor;
+}
+
+/* Global */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  $positionBody: relative;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+  position: $positionBody;
+}
+
+/* Menu */
+
+#menu li > a {
+  font-size: $tamanoLetraChica;
+  font-weight: bold;
+  color: #3f3f3f;
+}
+
+#menu form > button {
+  font-size: $tamanaLetraGrande;
+  font-weight: bold;
+}
+
+/* carousel */
+.navbar {
+  position: relative;
+}
+.carousel-inner {
+  width: 100%;
+  max-height: 900px;
+}
+.carousel-item img {
+  max-width: 100%;
+}
+
+/* Card */
+.card-container {
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+.card-container img {
+  max-width: 100%;
+  height: 100%;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+@media screen and (min-width: 850px) {
+  .card-container img {
+    width: 100%;
+    height: 200px;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+  }
+}
+.card-container:hover {
+  background: #f2f2f2;
+}
+
+/* Noticias */
+
+.noticia {
+  padding: 100px;
+  padding-bottom: 0px;
+}
+
+.titulo--noticia {
+  margin-bottom: 30px;
+  text-decoration-line: underline;
+}
+
+/* Media  */
+
+.video {
+  padding-top: 50px;
+}
+
+.nosotros {
+  padding: 100px;
+}
+
+.titulo--nosotros {
+  margin-bottom: 30px;
+}
+.imagen--nosotros {
+  height: 500px;
+  width: 700px;
+}
